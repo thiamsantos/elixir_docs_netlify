@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "$(pwd)"
+mkdir doc
+
+echo "$(pwd)" > doc/index.html
