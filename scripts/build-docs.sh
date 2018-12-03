@@ -1,9 +1,11 @@
 #!/bin/bash
 
+apt install -y automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev
+
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.2
 
-export HOME="$HOME/.asdf/asdf.sh"
-export HOME="$HOME/.asdf/completions/asdf.bash"
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 asdf plugin-add erlang
 asdf plugin-add elixir
